@@ -1,0 +1,16 @@
+---
+title: "Title"
+author: "Author"
+date: "01/01/2000"
+format: 
+  html:
+    code-fold: true
+jupyter: julia-1.8
+---
+
+
+```{julia}
+#| label: code-block-01
+
+2 + 2
+```
