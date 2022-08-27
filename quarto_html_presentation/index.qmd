@@ -33,6 +33,9 @@ Learn more: [Quarto Reveal](https://quarto.org/docs/presentations/revealjs/)
 
 ## Hello, World!
 
+- Here is the well known "hello world" program. 
+
+
 ```{julia}
 #| label: hello-world
 #| echo: true
@@ -42,7 +45,7 @@ print("Hello, World!")
 
 ## A Calculation
 
-::: center
+- It's easy to perform calculations with Julia. 
 
 ```{julia}
 #| label: code-block-01
@@ -52,7 +55,6 @@ print("Hello, World!")
 2 + 2
 ```
 
-:::
 
 ## A Plot
 

@@ -37,6 +37,7 @@ print("Hello, World!")
 
 ## A Calculation
 
+
 ```{julia}
 #| label: code-block-01
 
