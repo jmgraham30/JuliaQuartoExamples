@@ -43,3 +43,35 @@ print("Hello, World!")
 
 Let's plot $f(x)=x^2$ over $[-1,1]$.
 
+::: {.panel-tabset}
+
+## Plot
+
+```{julia}
+
+#| echo: false
+#| label: fig-x-sqaured
+#| fig-cap: "Plot of $y=x^2$ over $[-1,1]$"
+
+x = -1.0:0.01:1.0;
+y = x.^2;
+plot(x,y,legend=false,xlabel="x",ylabel="y",lw=2)
+
+```
+
+## Code
+
+```{julia}
+
+#| eval: false
+#| code-fold: false
+
+x = -1.0:0.01:1.0;
+y = x.^2;
+plot(x,y,legend=false,xlabel="x",ylabe="y",lw=2)
+
+```
+
+:::
+
+@fig-x-sqaured shows the result. 
