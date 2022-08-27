@@ -18,7 +18,9 @@ using Plots;
 
 # Introduction 
 
-A demonstration of [literate programming](https://en.wikipedia.org/wiki/Literate_programming) using [Quarto](https://quarto.org/) and [Julia](https://julialang.org/). Let's begin with the basics. 
+A demonstration of [literate programming](https://en.wikipedia.org/wiki/Literate_programming) using [Quarto](https://quarto.org/) and [Julia](https://julialang.org/). This document is set to render as an html document with options set for code-folding, a table of contents, and to allow copying of code when hovering over a code block. 
+
+Let's begin with the basics. 
 
 ## Hello, World!
 
@@ -38,4 +40,6 @@ print("Hello, World!")
 
 
 ## A Plot
+
+Let's plot $f(x)=x^2$ over $[-1,1]$.
 
