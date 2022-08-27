@@ -7,6 +7,7 @@ format:
     code-fold: true
     toc: true
     code-copy: hover
+bibliography: my_bib.bib
 jupyter: julia-1.8
 ---
 
@@ -18,7 +19,11 @@ using Plots, LaTeXStrings;
 
 # Introduction 
 
-A demonstration of [literate programming](https://en.wikipedia.org/wiki/Literate_programming) using [Quarto](https://quarto.org/) and [Julia](https://julialang.org/). This document is set to render as an html document with options set for code-folding, a table of contents, and to allow copying of code when hovering over a code block. 
+A demonstration of [literate programming](https://en.wikipedia.org/wiki/Literate_programming) using [Quarto](https://quarto.org/) and [Julia](https://julialang.org/). Knuth [^1] says always be literate [@knuth1984literate].
+
+[^1]: [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth) is a famous computer scientist. 
+
+This document is set to render as an html document with options set for code-folding, a table of contents, and to allow copying of code when hovering over a code block. 
 
 Let's begin with the basics. 
 
@@ -75,3 +80,5 @@ plot(x,y,legend=false,xlab="x",ylab="y",lw=2,,title=L"Plot of $y=x^2$.")
 :::
 
 @fig-x-sqaured shows the result. 
+
+## References
