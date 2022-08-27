@@ -10,7 +10,7 @@ Examples include:
 
 - An html presentation with relevant code in the [quarto_html_presentation](https://github.com/jmgraham30/JuliaQuartoExamples/tree/master/quarto_html_presentation) folder. 
 
-- A beamer presentation with relevant code in the []() folder. 
+- A beamer presentation with relevant code in the [quarto_beamer_presentation](https://github.com/jmgraham30/JuliaQuartoExamples/tree/master/quarto_beamer_presentation) folder. 
 
 [Netlify Drop](https://app.netlify.com/) has been used to host the html documents on the web. These are:
 
