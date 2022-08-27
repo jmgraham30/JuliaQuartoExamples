@@ -5,6 +5,7 @@ author: "Author"
 date: "01/01/2000"
 format:
   revealjs: 
+    theme: simple
     slide-number: true
     chalkboard: 
       buttons: false
@@ -26,21 +27,32 @@ This presentation is created using [Quarto](https://quarto.org/), [Julia](https:
 
 - Let's begin with the basics. 
 
+::: footer
+Learn more: [Quarto Reveal](https://quarto.org/docs/presentations/revealjs/)
+:::
+
 ## Hello, World!
 
 ```{julia}
 #| label: hello-world
+#| echo: true
 
 print("Hello, World!")
 ```
 
 ## A Calculation
 
+::: center
+
 ```{julia}
 #| label: code-block-01
+#| echo: true
+#| code-fold: true
 
 2 + 2
 ```
+
+:::
 
 ## A Plot
 
@@ -48,7 +60,7 @@ Let's plot $f(x)=x^2$ over $[-1,1]$.
 
 ::: {.panel-tabset}
 
-## Plot
+### Plot
 
 ```{julia}
 
@@ -62,12 +74,12 @@ plot(x,y,legend=false,xlab="x",ylab="y",lw=2,title=L"Plot of $y=x^2$.")
 
 ```
 
-## Code
+### Code
 
 ```{julia}
 
 #| eval: false
-#| code-fold: false
+#| echo: true 
 
 x = -1.0:0.01:1.0;
 y = x.^2;
@@ -77,4 +89,44 @@ plot(x,y,legend=false,xlab="x",ylab="y",lw=2,,title=L"Plot of $y=x^2$.")
 
 :::
 
-@fig-x-sqaured shows the result. 
+## LaTeX Equations
+
+[MathJax](https://www.mathjax.org/) rendering of equations to HTML
+
+::: columns
+::: {.column width="40%"}
+``` tex
+\begin{gather*}
+a_1=b_1+c_1\\
+a_2=b_2+c_2-d_2+e_2
+\end{gather*}
+\begin{align}
+a_{11}& =b_{11}&
+  a_{12}& =b_{12}\\
+a_{21}& =b_{21}&
+  a_{22}& =b_{22}+c_{22}
+\end{align}
+```
+:::
+
+::: {.column width="60%"}
+```{=tex}
+\begin{gather*}
+a_1=b_1+c_1\\
+a_2=b_2+c_2-d_2+e_2
+\end{gather*}
+```
+```{=tex}
+\begin{align}
+a_{11}& =b_{11}&
+  a_{12}& =b_{12}\\
+a_{21}& =b_{21}&
+  a_{22}& =b_{22}+c_{22}
+\end{align}
+```
+:::
+:::
+
+::: footer
+Learn more: [LaTeX Equations](https://quarto.org/docs/authoring/markdown-basics.html#equations)
+:::
