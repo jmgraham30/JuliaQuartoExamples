@@ -3,10 +3,10 @@ title: "Title"
 author: "Author"
 date: "01/01/2000"
 format: 
-  pdf:
-    toc: true
-    number-sections: true
-    colorlinks: true
+  beamer:
+    navigation: horizontal
+    theme: AnnArbor
+    colortheme: lily
 bibliography: my_bib.bib
 jupyter: julia-1.8
 ---
@@ -17,20 +17,21 @@ jupyter: julia-1.8
 using Plots, LaTeXStrings;
 ```
 
-# Introduction 
+## Introduction 
 
 A demonstration of [literate programming](https://en.wikipedia.org/wiki/Literate_programming) using [Quarto](https://quarto.org/) and [Julia](https://julialang.org/). Knuth [^1] says always be literate [@knuth1984literate].
 
 [^1]: [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth) is a famous computer scientist. 
 
-This document is set to render as an html document with options set for code-folding, a table of contents, and to allow copying of code when hovering over a code block. 
+This document is set to render as beamer slides. 
 
-Let's begin with the basics. 
+- Let's begin with the basics. 
 
 ## Hello, World!
 
 ```{julia}
 #| label: hello-world
+#| echo: true
 
 print("Hello, World!")
 ```
@@ -40,6 +41,7 @@ print("Hello, World!")
 
 ```{julia}
 #| label: code-block-01
+#| echo: true
 
 2 + 2
 ```
@@ -58,8 +60,4 @@ y = x.^2;
 plot(x,y,legend=false,xlab="x",ylab="y",lw=2,title=L"Plot of $y=x^2$.")
 
 ```
-
-@fig-x-sqaured shows the result. 
-
-## References
 
