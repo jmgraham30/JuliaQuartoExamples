@@ -1,0 +1,65 @@
+---
+title: "Title"
+author: "Author"
+date: "01/01/2000"
+format: 
+  pdf:
+    toc: true
+    number-sections: true
+    colorlinks: true
+bibliography: my_bib.bib
+jupyter: julia-1.8
+---
+
+```{julia}
+#| echo: false
+
+using Plots, LaTeXStrings;
+```
+
+# Introduction 
+
+A demonstration of [literate programming](https://en.wikipedia.org/wiki/Literate_programming) using [Quarto](https://quarto.org/) and [Julia](https://julialang.org/). Knuth [^1] says always be literate [@knuth1984literate].
+
+[^1]: [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth) is a famous computer scientist. 
+
+This document is set to render as an html document with options set for code-folding, a table of contents, and to allow copying of code when hovering over a code block. 
+
+Let's begin with the basics. 
+
+## Hello, World!
+
+```{julia}
+#| label: hello-world
+
+print("Hello, World!")
+```
+
+
+## A Calculation
+
+```{julia}
+#| label: code-block-01
+
+2 + 2
+```
+
+
+## A Plot
+
+```{julia}
+
+#| echo: false
+#| label: fig-x-sqaured
+#| fig-cap: "Plot of $y=x^2$ over $[-1,1]$"
+
+x = -1.0:0.01:1.0;
+y = x.^2;
+plot(x,y,legend=false,xlab="x",ylab="y",lw=2,title=L"Plot of $y=x^2$.")
+
+```
+
+@fig-x-sqaured shows the result. 
+
+## References
+
