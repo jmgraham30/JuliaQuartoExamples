@@ -13,7 +13,7 @@ jupyter: julia-1.8
 ```{julia}
 #| echo: false
 
-using Plots;
+using Plots, LaTeXStrings;
 ```
 
 # Introduction 
@@ -55,7 +55,7 @@ Let's plot $f(x)=x^2$ over $[-1,1]$.
 
 x = -1.0:0.01:1.0;
 y = x.^2;
-plot(x,y,legend=false,xlabel="x",ylabel="y",lw=2)
+plot(x,y,legend=false,xlab="x",ylab="y",lw=2,title=L"Plot of $y=x^2$.")
 
 ```
 
@@ -68,7 +68,7 @@ plot(x,y,legend=false,xlabel="x",ylabel="y",lw=2)
 
 x = -1.0:0.01:1.0;
 y = x.^2;
-plot(x,y,legend=false,xlabel="x",ylabe="y",lw=2)
+plot(x,y,legend=false,xlab="x",ylab="y",lw=2,,title=L"Plot of $y=x^2$.")
 
 ```
 
