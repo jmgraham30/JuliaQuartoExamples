@@ -1,0 +1,80 @@
+---
+title: "Title"
+subtitle: "Subtitle"
+author: "Author"
+date: "01/01/2000"
+format:
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+jupyter: julia-1.8
+---
+
+```{julia}
+#| echo: false
+
+using Plots, LaTeXStrings;
+```
+
+## Introduction 
+
+This presentation is created using [Quarto](https://quarto.org/), [Julia](https://julialang.org/), and [Reveal.js](https://revealjs.com).
+
+. . . 
+
+- Let's begin with the basics. 
+
+## Hello, World!
+
+```{julia}
+#| label: hello-world
+
+print("Hello, World!")
+```
+
+## A Calculation
+
+```{julia}
+#| label: code-block-01
+
+2 + 2
+```
+
+## A Plot
+
+Let's plot $f(x)=x^2$ over $[-1,1]$.
+
+::: {.panel-tabset}
+
+## Plot
+
+```{julia}
+
+#| echo: false
+#| label: fig-x-sqaured
+#| fig-cap: "Plot of $y=x^2$ over $[-1,1]$"
+
+x = -1.0:0.01:1.0;
+y = x.^2;
+plot(x,y,legend=false,xlab="x",ylab="y",lw=2,title=L"Plot of $y=x^2$.")
+
+```
+
+## Code
+
+```{julia}
+
+#| eval: false
+#| code-fold: false
+
+x = -1.0:0.01:1.0;
+y = x.^2;
+plot(x,y,legend=false,xlab="x",ylab="y",lw=2,,title=L"Plot of $y=x^2$.")
+
+```
+
+:::
+
+@fig-x-sqaured shows the result. 
