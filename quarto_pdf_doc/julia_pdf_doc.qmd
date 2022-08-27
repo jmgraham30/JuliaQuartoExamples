@@ -23,7 +23,7 @@ A demonstration of [literate programming](https://en.wikipedia.org/wiki/Literate
 
 [^1]: [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth) is a famous computer scientist. 
 
-This document is set to render as an html document with options set for code-folding, a table of contents, and to allow copying of code when hovering over a code block. 
+This document is set to render as a pdf document. 
 
 Let's begin with the basics. 
 
