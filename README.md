@@ -1,4 +1,10 @@
-# JuliaQuartoExamples
+# Julia Quarto Examples
+
+Repository with examples of using [Quarto](https://quarto.org/) with [Julia](https://julialang.org/) for [literate programming](https://en.wikipedia.org/wiki/Literate_programming).
+
+- [Example html document](https://statuesque-kleicha-6d26ad.netlify.app/quarto_html_doc/).
+
+- [Example html presentation](https://statuesque-kleicha-6d26ad.netlify.app/quarto_html_presentation/#/title-slide).
 
 This code base is using the Julia Language and [DrWatson](https://juliadynamics.github.io/DrWatson.jl/stable/)
 to make a reproducible scientific project named
