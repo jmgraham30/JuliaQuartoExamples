@@ -5,12 +5,37 @@ date: "01/01/2000"
 format: 
   html:
     code-fold: true
+    toc: true
+    code-copy: hover
 jupyter: julia-1.8
 ---
 
+```{julia}
+#| echo: false
+
+using Plots;
+```
+
+# Introduction 
+
+A demonstration of [literate programming](https://en.wikipedia.org/wiki/Literate_programming) using [Quarto](https://quarto.org/) and [Julia](https://julialang.org/). Let's begin with the basics. 
+
+## Hello, World!
+
+```{julia}
+#| label: hello-world
+
+print("Hello, World!")
+```
+
+## A Calculation
 
 ```{julia}
 #| label: code-block-01
 
 2 + 2
 ```
+
+
+## A Plot
+
