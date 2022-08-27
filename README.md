@@ -2,6 +2,18 @@
 
 Repository with examples of using [Quarto](https://quarto.org/) with [Julia](https://julialang.org/) for [literate programming](https://en.wikipedia.org/wiki/Literate_programming).
 
+Examples include:
+
+- An html document with relevant code in the [quarto_html_doc](https://github.com/jmgraham30/JuliaQuartoExamples/tree/master/quarto_html_doc) folder. 
+
+- A pdf document with relevant code in the [quarto_pdf_doc](https://github.com/jmgraham30/JuliaQuartoExamples/tree/master/quarto_pdf_doc) folder. 
+
+- An html presentation with relevant code in the [quarto_html_presentation](https://github.com/jmgraham30/JuliaQuartoExamples/tree/master/quarto_html_presentation) folder. 
+
+- A beamer presentation with relevant code in the []() folder. 
+
+[Netlify Drop](https://app.netlify.com/) has been used to host the html documents on the web. These are:
+
 - [Example html document](https://statuesque-kleicha-6d26ad.netlify.app/quarto_html_doc/).
 
 - [Example html presentation](https://statuesque-kleicha-6d26ad.netlify.app/quarto_html_presentation/#/title-slide).
